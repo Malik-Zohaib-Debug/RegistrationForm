@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <label class="title">Registration Form</label>
+        <form action="#">
+            <label for="fname">First Name:</label>
+            <input type="text" placeholder="Your name...." required>
+            
+            <label for="lname">Last Name:</label>
+            <input type="text" placeholder="Your last name...." required>
+            
+            <label class="username">Username:</label>
+            <input type="text" placeholder="Your mobile number" required>
+  
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Your email address" required>
+
+            <label for="organization">Organization Name:</label>
+            <input type="text" placeholder="Your organization name...." required>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">Male
+            <input type="radio" id="female" name="gender" value="female">Female
+            <input type="radio" id="others" name="gender" value="others">Others
+
+            <label for="backup-person"><br>Backup Person:</label>
+            <input type="text" placeholder="Backup person name...." required>
+
+            <label for="role"><br>Role:</label>
+            <select id="role">
+                <option value="role">Select Roles</option>
+                <option value="software engineer">Software Engineer</option>
+                <option value="data scientist">Data Scientist</option>
+                <option value="Quality Assurance">Quality Assurance</option>
+            </select>
+
+            <label for="special-role">Special Role:</label>
+            <select id="special-role">
+                <option value="special-role">Select Special Roles</option>
+                <option value="team leader">Team leader</option>
+                <option value="project manager">Project Manager</option>
+                <option value="sr project manager">Sr Project Manager</option>
+                <option value="sr quality assurance expert">Senior Quality Assurance Expert</option>
+            </select>
+
+            <label for="job-type">Job Type:</label>
+            <select id="job-type">
+                <option value="job-type">Select Job Type</option>
+                <option value="full stack developer">Full Stack Developer</option>
+                <option value="machine learning engineer">Machine Learning Engineer</option>
+                <option value="backend engineer">Backend Engineer</option>
+                <option value="frontend engineer">Frontend Engineer</option>
+            </select>
+
+            <label for="hiring">Hiring Date: </label>
+            <input type="date" id="hiring" name="hiring">
+
+            <div class="button">
+                <input type="submit" value="submit">
+                <input type="submit" value="cancel">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
